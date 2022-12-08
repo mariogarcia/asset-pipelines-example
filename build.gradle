@@ -19,5 +19,5 @@ assets {
     minifyCss        = true
     enableSourceMaps = true
     maxThreads       = 8
-    configOptions    = [commonJs: true]
+    configOptions    = [commonJs: true, enableES6: false]
 }

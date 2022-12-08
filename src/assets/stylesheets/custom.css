@@ -189,6 +189,17 @@ a.pure-button-primary {
 
 }
 
+.content-wrapper-no-home {
+    /* These styles are required for the "scroll-over" effect */
+    position: absolute;
+    top: 6%;
+    width: 100%;
+    min-height: 12%;
+    z-index: 2;
+    background: white;
+    padding: 2em;
+}
+
 /* We want to give the content area some more padding */
 .content {
     padding: 1em 1em 3em;
@@ -284,4 +295,10 @@ a.pure-button-primary {
     .splash-head {
         font-size: 300%;
     }
+}
+
+.docs a {
+  color: white;
+  text-decoration: underlined;
+  padding-left: .5em;
 }

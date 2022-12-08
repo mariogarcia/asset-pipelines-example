@@ -7,8 +7,8 @@ class Documentation extends React.Component {
                 </div>
                 <div className="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
                     <h2 className="content-head content-head-ribbon">Documentation</h2>
-                    <p>
-                        Checkout the latest documentation
+                    <p className="docs">
+                        Checkout the latest documentation at <a className="pure-color-white" href="http://www.asset-pipeline.com/manual">http://www.asset-pipeline.com/manual</a>
                     </p>
                 </div>
             </div>
