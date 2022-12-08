@@ -15,9 +15,9 @@ dependencies {
 }
 
 assets {
-    minifyJs = true
-    minifyCss = true
+    minifyJs         = true
+    minifyCss        = true
     enableSourceMaps = true
-    maxThreads = 8
-    configOptions = [commonJs: true]
+    maxThreads       = 8
+    configOptions    = [commonJs: true]
 }
