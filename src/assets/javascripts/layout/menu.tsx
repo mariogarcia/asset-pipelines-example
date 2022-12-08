@@ -3,7 +3,7 @@ class Menu extends React.Component {
         return (
 
               <div className="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-                  <a className="pure-menu-heading" href="#">GQL</a>
+                  <a className="pure-menu-heading" href="#">Assets-Pipelines</a>
 
                   <ul className="pure-menu-list">
                       <li className="pure-menu-item pure-menu-selected"><a href="index.html" className="pure-menu-link">Home</a></li>
