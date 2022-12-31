@@ -20,5 +20,4 @@ class Home extends React.Component {
     }
 }
 
-const root = ReactDOM.createRoot(document.getElementById("app"))
-root.render(<Home />);
+ReactDOM.createRoot(document.getElementById("app")).render(<Home />);

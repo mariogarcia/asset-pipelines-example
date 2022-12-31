@@ -1,4 +1,5 @@
 plugins {
+    id 'groovy'
     id "com.bertramlabs.asset-pipeline" version "3.0.10"
     id 'org.ajoberstar.git-publish' version "4.1.1"
 }
@@ -9,6 +10,7 @@ repositories {
 }
 
 dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.0.7'
     assets "com.bertramlabs.plugins:jsx-asset-pipeline:$assets_pipeline"
     assets "com.bertramlabs.plugins:typescript-asset-pipeline:$assets_pipeline"
     assets "com.bertramlabs.plugins:groocss-asset-pipeline:$assets_pipeline"
@@ -22,14 +24,18 @@ assets {
     configOptions    = [
         commonJs: true,
         enableES6: false,
-        groocss: [prettyPrint: true, compress: true, noExts: true, convertUnderline: true]
+        groocss: [
+            prettyPrint: false,
+            compress: true,
+            noExts: false,
+            convertUnderline: false
+        ]
     ]
-
     excludes = [
-        '*.groocss',
         'components/*',
-        'layout/*',
         'react*.js',
-        'custom/*.css'
+        'layout/*',
+        'custom/*.css',
+        '*.groocss',
     ]
 }
