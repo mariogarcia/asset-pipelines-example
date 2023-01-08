@@ -1,7 +1,6 @@
 plugins {
     id 'groovy'
     id "com.bertramlabs.asset-pipeline" version "3.0.10"
-    id 'org.ajoberstar.git-publish' version "4.1.1"
 }
 
 repositories {
@@ -10,10 +9,14 @@ repositories {
 }
 
 dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.0.7'
+    assets "com.bertramlabs.plugins:asset-pipeline-core:$assets_pipeline"
     assets "com.bertramlabs.plugins:jsx-asset-pipeline:$assets_pipeline"
     assets "com.bertramlabs.plugins:typescript-asset-pipeline:$assets_pipeline"
-    assets "com.bertramlabs.plugins:groocss-asset-pipeline:$assets_pipeline"
+
+    assets('org.groocss:groocss:1.0-M2')
+    assets("com.bertramlabs.plugins:groocss-asset-pipeline:$assets_pipeline") {
+        exclude group: "org.groocss", module: "groocss"
+    }
 }
 
 assets {
