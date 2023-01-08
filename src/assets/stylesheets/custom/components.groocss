@@ -2,7 +2,6 @@
 p  {
   add '> a.doc_link', {
     color '#fff'
-    paddingLeft 2.3.em // <-- fails
-    //paddingLeft '1em'
+    paddingLeft 2.3.em
   }
 }
